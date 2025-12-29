@@ -20,13 +20,13 @@ cs   =   Course.create(title:   'CS 101')
 ptp = Course.create(title: 'PTP 212')
 rdb = Course.create(title: 'RDB 251')
 Course.create(title: 'Hidden course 999')
-math.enrollments.create([{student: a}, {student: b}, {student: c}])
+math.enrollments.create([{student: b}, {student: c}])
 
-cs.enrollments.create([{student: d}, {student: e}, {student: g}, {student: a}])
+cs.enrollments.create([{student: e}, {student: g}])
 
-ptp.enrollments.create([{student: e}, {student: a}, {student: c}])
+ptp.enrollments.create([{student: a}, {student: c}, {student: e}])
 
-rdb.enrollments.create([{student: g}, {student: d}])  
+rdb.enrollments.create([{student: d}, {student: e}, {student: g}])
 
 a.add_grade(math, 5)
 a.add_grade(math, 4)

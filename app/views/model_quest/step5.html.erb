@@ -12,20 +12,20 @@
   <div class="expected">
     <ul>
       <li>На Hidden course 999 записано 0.</li>
-      <li>На RDB 251 записано 2.</li>
-      <li>На Math 101 записано 3.</li>
+      <li>На CS 101 записано 2.</li>
+      <li>На Math 101 записано 2.</li>
       <li>На PTP 212 записано 3.</li>
-      <li>На CS 101 записано 4.</li>
+      <li>На RDB 251 записано 3.</li>
     </ul>
     </div>
     <div class="actual">
     <ul>
       <%- @courses_groups.each do |cg| %>
-      <li><%= "На #{cg.title} записано #{cg.cnt}" %></li>
-      <%- end %>  
+        <li>На <%= cg[:title] %> записано <%= cg[:cnt] %></li>
+      <%- end %>
     </ul>
     </div>
-  </div>        
+  </div>
 <p class="text-block">
 Это последнее задание. Если списки совпали, грузи ответы в Moodle и продолжай делать коаны, или обсуди индивидуальный проект.
 </p>
